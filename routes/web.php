@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\buyerController;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\sellerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [logincontroller::class, 'index']);
+
+
+Route::get('/buyer', [buyerController::class, 'buyerIndex']);
+Route::get('/buyer/bought', [buyerController::class, 'bought']);
+
+
+Route::get('/seller/',[sellerController::class, 'sellerIndex']);
+Route::get('/seller/add',[sellerController::class, 'addsell']);
