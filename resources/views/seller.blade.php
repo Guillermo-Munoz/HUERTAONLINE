@@ -18,8 +18,6 @@
         <label for="precio">Precio:</label><br>
         <input type="number" id="precio" name="precio" min="0" step="0.01" required><br><br>
         
-        <label for="cantidad">Cantidad:</label><br>
-        <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
         
         <label for="foto">Foto:</label><br>
         <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
