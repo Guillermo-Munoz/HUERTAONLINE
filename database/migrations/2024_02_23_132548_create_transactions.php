@@ -14,16 +14,16 @@ return new class extends Migration
     {   Schema::dropIfExists('transactions');
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_comprador');
-            $table->unsignedBigInteger('id_vendedor');
-          
-            $table->dateTime('fecha_hora');
-            $table->enum('estado', ['pendiente', 'completada', 'cancelada']);
+            $table->unsignedBigInteger('buyer_id');
+            $table->unsignedBigInteger('seller_id');
+            $table->unsignedBigInteger('product_id');
+            $table->dateTime('date_time');
+            $table->enum('state', ['pendiente', 'completada', 'cancelada']);
             $table->timestamps();
 
             $table->foreign('id_comprador')->references('id')->on('users');
             $table->foreign('id_vendedor')->references('id')->on('users');
-            $table->foreignId('id_producto')->constrained('products');
+            $table->foreign('id_producto')->references('id')->on('products');
             
         });
     }

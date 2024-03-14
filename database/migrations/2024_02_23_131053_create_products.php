@@ -13,12 +13,12 @@ return new class extends Migration
     {    Schema::dropIfExists('transactions');
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->text('descripcion');
-            $table->string('foto')->nullable();
-            $table->decimal('precio', 10, 2);
-            $table->unsignedBigInteger('id_vendedor');
-            $table->foreign('id_vendedor')->references('id')->on('users');
+            $table->string('name');
+            $table->text('description');
+            $table->string('photo')->nullable();
+            $table->decimal('price', 10, 2);
+            $table->unsignedBigInteger('seller_id');
+            $table->foreign('seller_id')->references('id')->on('users');
             $table->timestamps();
         });
            
