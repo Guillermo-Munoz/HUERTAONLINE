@@ -6,6 +6,6 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>Innicia sesión</h1>
+    <h1>Inicia sesión</h1>
 </body>
 </html>
