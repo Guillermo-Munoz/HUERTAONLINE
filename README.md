@@ -26,6 +26,9 @@
 ###  Diagrama de base de datos  
 ![Diagrama BD](public/DiagramaBD.png)  
 
+### Diagrama de uso
+![Diagrama uso](public/Diagrama.png)  
+
 ---
 
 ##  Tecnologías utilizadas  
