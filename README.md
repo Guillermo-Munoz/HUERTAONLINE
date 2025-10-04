@@ -18,7 +18,7 @@
 ##  Capturas de pantalla  
 
 ###  Login  
-![Login](public/Gestion.png)  
+![Login](public/Login.png)  
 
 ###  Panel de administración  
 ![Panel](public/Gestion.png)  
